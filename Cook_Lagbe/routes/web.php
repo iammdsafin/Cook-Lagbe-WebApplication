@@ -4,6 +4,8 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\CookController;
+
 
 
 
@@ -36,4 +38,6 @@ require __DIR__.'/auth.php';
 
 Route::get('/admin/dashboard', [AdminController::class, 'AdminDashboard'])->name('admin.dashboard');
 Route::get('/user/dashboard', [UserController::class, 'UserDashboard'])->name('user.dashboard');
+Route::get('/cook/dashboard', [CookController::class, 'CookDashboard'])->name('cook.dashboard');
+
 
