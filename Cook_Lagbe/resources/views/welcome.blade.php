@@ -8,7 +8,8 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        body {
+        body 
+        {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -16,9 +17,10 @@
             background-color: #ffffff;
         }
 
-        .container {
+        .container 
+        {
             background-color: #ffffff;
-            box-shadow: 0 4px 50px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
             max-width: 800px;
             padding: 40px;
             text-align: center;
@@ -27,32 +29,77 @@
             align-items: center;
         }
 
-        .title {
+
+        .title 
+        {
             font-size: 3rem;
+            font-family: 'comforta', consolas; /* Add this line with your desired font */
+
         }
 
-        .title span:first-child {
+        .title span:first-child 
+        {
             color: #37bcf7;
         }
 
-        .title span:last-child {
+        .title span:last-child 
+        {
             color: #101010;
         }
 
-        .image-container {
+        .image-container 
+        {
             flex: 1;
             display: flex;
             justify-content: flex-end;
         }
 
-        .image-container img {
-            max-width: 400px;
-            border-radius: 10px;
-        }
 
-        .content-container {
+
+        .content-container 
+        {
             flex: 1;
             text-align: left;
+        }
+
+        .feature-list 
+        {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .feature-list li 
+        {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+            line-height: 1.5;
+        }
+
+        .feature-list li:before 
+        {
+            content: "\2713";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 17px;
+            height: 17px;
+            border: 2px solid #2f4bfb;
+            background-color: #37bcf7;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 10px;
+            line-height: 12px;
+            color: #ffffff;
+        }
+
+
+        .feature-list li code 
+        {
+            color: #37bcf7;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -87,11 +134,6 @@
                     <a href="{{ route('login') }}" class="text-blue-500">Login now!</a>
                 </div>
             </main>
-        </div>
-
-        <div class="image-container">
-        <img src="{{url('/storage/public/cooking.jpg')}}" alt="Image" width="300" height="250"/>
-
         </div>
     </div>
 </body>
