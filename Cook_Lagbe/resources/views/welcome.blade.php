@@ -20,11 +20,11 @@
         .container 
         {
             background-color: #ffffff;
-            box-shadow: 0 4px 500px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
             max-width: 1100px;
             padding: 40px;
             text-align: center;
-            border-radius: 20px;
+            border-radius: 10px;
             display: flex;
             align-items: center;
         }
@@ -161,7 +161,7 @@
                 <a href="{{ route('login') }}" class="btnLog">Login</a>
             </div>
         </div>
-        <img src="{{ asset('images/cooking.jpg') }}" alt="Cook Image">
+        <img src="{{ asset('images/cooking.png') }}" alt="Cook Image">
     </div>
 </body>
 </html>
